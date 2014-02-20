@@ -119,7 +119,7 @@ Request access to Sina Weibo accounts:
 
 ## Protocols
 
-###### MRACAccountIdentifierStorageProtocol
+##### MRACAccountIdentifierStorageProtocol
 
 `MRSocialAbstract` has a `id<MRACAccountIdentifierStorageProtocol> storage` property that store/retrieve the ACAccount's identifer.
 With this identifier, `ACAcountStore` can return the `ACAccount` object which is needed to perform social requests. 
