@@ -30,7 +30,7 @@
     self.mockAccountStore = [OCMockObject mockForClass:[ACAccountStore class]];
     [[self.mockAccountStore stub] accountWithIdentifier:nil];
     
-    self.mockStorage = [OCMockObject mockForProtocol:@protocol(MRACAccountIdentifierStorageProtocol)];
+    self.mockStorage = [OCMockObject mockForProtocol:@protocol(MRSocialStorageProtocol)];
     
     self.social = [[MRTwitter alloc] initWithACAccountStore:self.mockAccountStore baseURL:nil];
     [self.social setStorage:self.mockStorage];

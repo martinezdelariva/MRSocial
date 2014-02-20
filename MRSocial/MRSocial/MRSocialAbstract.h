@@ -15,7 +15,7 @@
 @interface MRSocialAbstract : NSObject
 
 @property (strong, nonatomic) ACAccount *account;
-@property (strong, nonatomic) id<MRACAccountIdentifierStorageProtocol> storage;
+@property (strong, nonatomic) id<MRSocialStorageProtocol> storage;
 
 - (instancetype)initWithACAccountStore:(ACAccountStore *)accountStore baseURL:(NSURL *)baseUrl;
 

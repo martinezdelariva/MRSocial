@@ -1,5 +1,5 @@
 //
-//  MRACAccountIdentifierStorageProtocol.h
+//  MRSocialStorageProtocol.h
 //  MRSocial
 //
 //  Created by Jose Luis Martinez de la Riva on 20/02/14.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol MRACAccountIdentifierStorageProtocol <NSObject>
+@protocol MRSocialStorageProtocol <NSObject>
 - (void)storeACAccountIdentifier:(NSString *)identifier forKey:(NSString *)key;
 - (NSString *)retrieveACAccountIdentifierForKey:(NSString *)key;
 - (void)deleteACAccountIdentifierForKey:(NSString *)key;

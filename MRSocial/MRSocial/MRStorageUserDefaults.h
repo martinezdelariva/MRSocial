@@ -11,7 +11,7 @@
 // Protocol
 #import "MRACAccountIdentifierStorageProtocol.h"
 
-@interface MRStorageUserDefaults : NSObject<MRACAccountIdentifierStorageProtocol>
+@interface MRStorageUserDefaults : NSObject<MRSocialStorageProtocol>
 
 - (void)storeACAccountIdentifier:(NSString *)identifier forKey:(NSString *)key;
 - (NSString *)retrieveACAccountIdentifierForKey:(NSString *)key;

@@ -59,7 +59,7 @@
 		79B9A68D18B5F8E000C32B36 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
 		79B9A68F18B5FD0C00C32B36 /* MRStorageUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRStorageUserDefaults.h; sourceTree = "<group>"; };
 		79B9A69018B5FD0C00C32B36 /* MRStorageUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRStorageUserDefaults.m; sourceTree = "<group>"; };
-		79B9A69218B5FFF400C32B36 /* MRACAccountIdentifierStorageProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRACAccountIdentifierStorageProtocol.h; sourceTree = "<group>"; };
+		79B9A69218B5FFF400C32B36 /* MRSocialStorageProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRSocialStorageProtocol.h; sourceTree = "<group>"; };
 		79C06C9E18B35115001F0FD1 /* MRSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MRSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79C06CA118B35115001F0FD1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		79C06CA318B35115001F0FD1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -111,7 +111,7 @@
 			children = (
 				79B9A67618B38C5900C32B36 /* MRSocialAbstract.h */,
 				79B9A67718B38C5900C32B36 /* MRSocialAbstract.m */,
-				79B9A69218B5FFF400C32B36 /* MRACAccountIdentifierStorageProtocol.h */,
+				79B9A69218B5FFF400C32B36 /* MRSocialStorageProtocol.h */,
 				79B9A68F18B5FD0C00C32B36 /* MRStorageUserDefaults.h */,
 				79B9A69018B5FD0C00C32B36 /* MRStorageUserDefaults.m */,
 				79B9A66E18B352E700C32B36 /* MRTwitter.h */,
