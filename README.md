@@ -23,37 +23,38 @@ Copy files from folder `/MRSocial/MRSocial/*` into your project.
 Initialize Twitter:
 
 ```objc
-	MRTwitter *twitter = [[MRTwitter alloc] initWithACAccountStore:[[ACAccountStore alloc] init]
-               		                                        baseURL:[NSURL URLWithString:@"https://api.twitter.com/1.1/"]];
+MRTwitter *twitter = [[MRTwitter alloc] initWithACAccountStore:[[ACAccountStore alloc] init]
+                                                       baseURL:[NSURL URLWithString:@"https://api.twitter.com/1.1/"]];
+twitter.storage = [[MRStorageUserDefaults alloc] init]; // If you want to use a storage
 ```
 
 Request access to Twitter accounts:
 
 ```objc
-	[twitter requestAccessWithCompletion:^ACAccount *(NSArray *accounts, NSError *error) {
-        NSLog(@"accounts: %@", accounts);
-        NSLog(@"error: %@", error);
+[twitter requestAccessWithCompletion:^ACAccount *(NSArray *accounts, NSError *error) {
+	NSLog(@"accounts: %@", accounts);
+    NSLog(@"error: %@", error);
         
-        return [accounts lastObject]; // Choose ACAccount for future request. iOS could hold > 1 Twitter account
-    }];
+    return [accounts lastObject]; // Choose ACAccount for future request. iOS could hold > 1 Twitter account
+}];
 ```
 
 Or you can set Twitter ACAccount after request access:
 
 ```objc
-	[twitter setAccount:selectedAccount];
+[twitter setAccount:selectedAccount];
 ```
 
 Get timeline:
 
 ```objc
-    [twitter requestWithMethod:SLRequestMethodGET
-                          path:@"statuses/home_timeline.json"
-                    parameters:@{@"count" : @"2"}
-                    completion:^void (NSDictionary *response, NSError *error) {
-                        NSLog(@"response: %@", response);
-                        NSLog(@"error: %@", error);
-                    }];
+[twitter requestWithMethod:SLRequestMethodGET
+                      path:@"statuses/home_timeline.json"
+                parameters:@{@"count" : @"2"}
+                completion:^void (NSDictionary *response, NSError *error) {
+                    NSLog(@"response: %@", response);
+                    NSLog(@"error: %@", error);
+                }];
 ```
 
 ##### Facebook
@@ -61,39 +62,39 @@ Get timeline:
 Initialize Facebook:
 
 ```objc
-    MRFaceebook *facebbok = [[MRFaceebook alloc] initWithACAccountStore:[[ACAccountStore alloc] init]
-                                                                baseURL:[NSURL URLWithString:@"https://api.twitter.com/1.1/"]];
-    facebook.configuration = @{
-       ACFacebookAppIdKey          : @"", // FACEBOOK_APP_ID
-       ACFacebookPermissionsKey    : @[@"email", @"read_stream", @"user_relationships"],
-       ACFacebookAudienceKey       : ACFacebookAudienceEveryone
-    };                                                                
+MRFaceebook *facebbok = [[MRFaceebook alloc] initWithACAccountStore:[[ACAccountStore alloc] init]
+                                                            baseURL:[NSURL URLWithString:@"https://api.twitter.com/1.1/"]];
+facebook.configuration = @{
+   ACFacebookAppIdKey          : @"", // FACEBOOK_APP_ID
+   ACFacebookPermissionsKey    : @[@"email", @"read_stream", @"user_relationships"],
+   ACFacebookAudienceKey       : ACFacebookAudienceEveryone
+};                                                                
 ```
 
 Request access to Facebook accounts:
 
 ```objc
-	[facebook requestAccessWithCompletion:^ACAccount *(NSArray *accounts, NSError *error) {
-        NSLog(@"accounts: %@", accounts);
-        NSLog(@"error: %@", error);
+[facebook requestAccessWithCompletion:^ACAccount *(NSArray *accounts, NSError *error) {
+    NSLog(@"accounts: %@", accounts);
+    NSLog(@"error: %@", error);
         
-        return [accounts lastObject]; // Choose ACAccount for future request. iOS could hold only 1 Facebook account
-    }];
+    return [accounts lastObject]; // Choose ACAccount for future request. iOS could hold only 1 Facebook account
+}];
 ```
 
 Get personal data:
 
 ```objc
-    [facebook requestWithMethod:SLRequestMethodGET
-                           path:@"me"
-                     parameters:@{@"fields" :
-                    					@"bio,birthday,cover,email,first_name,gender,languages,last_name,"
-                                       @"link,location,picture,relationship_status"
-                                 }
-                     completion:^void (NSDictionary *response, NSError *error) {
-                             NSLog(@"response: %@", response);
-                             NSLog(@"error: %@", error);
-                         }];
+[facebook requestWithMethod:SLRequestMethodGET
+                       path:@"me"
+                 parameters:@{@"fields" :
+                               @"bio,birthday,cover,email,first_name,gender,languages,last_name,"
+                               @"link,location,picture,relationship_status"
+                             }
+                 completion:^void (NSDictionary *response, NSError *error) {
+                     			NSLog(@"response: %@", response);
+                     			NSLog(@"error: %@", error);
+                 }];
 ```
 
 ##### Sina Weibo
@@ -101,20 +102,30 @@ Get personal data:
 Initialize Sina Weibo:
 
 ```objc
-    MRSinaWeibo *sinaWeibo = [[MRSinaWeibo alloc] initWithACAccountStore:[[ACAccountStore alloc] init]
-                                                                 baseURL:[NSURL URLWithString:@"https://api.weibo.com/2/"]];                                                               
+MRSinaWeibo *sinaWeibo = [[MRSinaWeibo alloc] initWithACAccountStore:[[ACAccountStore alloc] init]
+                                                             baseURL:[NSURL URLWithString:@"https://api.weibo.com/2/"]];                                                               
 ```
 
 Request access to Sina Weibo accounts:
 
 ```objc
-	[sinaWeibo requestAccessWithCompletion:^ACAccount *(NSArray *accounts, NSError *error) {
-        NSLog(@"accounts: %@", accounts);
-        NSLog(@"error: %@", error);
+[sinaWeibo requestAccessWithCompletion:^ACAccount *(NSArray *accounts, NSError *error) {
+    NSLog(@"accounts: %@", accounts);
+    NSLog(@"error: %@", error);
         
-        return [accounts lastObject];
-    }];
+    return [accounts lastObject];
+}];        
 ```
+
+## Protocols
+
+###### MRACAccountIdentifierStorageProtocol
+
+`MRSocialAbstract` has a `id<MRACAccountIdentifierStorageProtocol> storage` property that store/retrieve the ACAccount's identifer.
+With this identifier, `ACAcountStore` can return the `ACAccount` object which is needed to perform social requests. 
+Using the storage, it isn't needed to ask for access to `ACAcountStore` each time that an `ACAccount` is required.
+
+As an example, class `MRStorageUserDefaults` that implement protocol `MRACAccountIdentifierStorageProtocol` is provided.
 
 ## Documents
 
