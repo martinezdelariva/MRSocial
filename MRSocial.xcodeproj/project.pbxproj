@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		795761E118B60B9E001F93C0 /* MRStorageUserDefaultsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 795761E018B60B9D001F93C0 /* MRStorageUserDefaultsTests.m */; };
+		79B9A67018B352E700C32B36 /* MRTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B9A66F18B352E700C32B36 /* MRTwitter.m */; };
+		79B9A67818B38C5900C32B36 /* MRSocialAbstract.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B9A67718B38C5900C32B36 /* MRSocialAbstract.m */; };
+		79B9A67B18B38DC500C32B36 /* MRFacebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B9A67A18B38DC500C32B36 /* MRFacebook.m */; };
+		79B9A67E18B3E66000C32B36 /* MRSinaWeibo.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B9A67D18B3E66000C32B36 /* MRSinaWeibo.m */; };
+		79B9A68E18B5F8E000C32B36 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B9A68D18B5F8E000C32B36 /* libOCMock.a */; };
+		79B9A69118B5FD0C00C32B36 /* MRStorageUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B9A69018B5FD0C00C32B36 /* MRStorageUserDefaults.m */; };
 		79C06CA218B35115001F0FD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C06CA118B35115001F0FD1 /* Foundation.framework */; };
 		79C06CA418B35115001F0FD1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C06CA318B35115001F0FD1 /* CoreGraphics.framework */; };
 		79C06CA618B35115001F0FD1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C06CA518B35115001F0FD1 /* UIKit.framework */; };
@@ -20,7 +27,7 @@
 		79C06CC218B35115001F0FD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C06CA118B35115001F0FD1 /* Foundation.framework */; };
 		79C06CC318B35115001F0FD1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C06CA518B35115001F0FD1 /* UIKit.framework */; };
 		79C06CCB18B35115001F0FD1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79C06CC918B35115001F0FD1 /* InfoPlist.strings */; };
-		79C06CCD18B35115001F0FD1 /* MRSocialAuthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C06CCC18B35115001F0FD1 /* MRSocialAuthTests.m */; };
+		79C06CCD18B35115001F0FD1 /* MRSocialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C06CCC18B35115001F0FD1 /* MRSocialTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,25 +41,44 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		79C06C9E18B35115001F0FD1 /* MRSocialAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MRSocialAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		795761E018B60B9D001F93C0 /* MRStorageUserDefaultsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRStorageUserDefaultsTests.m; sourceTree = "<group>"; };
+		79B9A66E18B352E700C32B36 /* MRTwitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRTwitter.h; sourceTree = "<group>"; };
+		79B9A66F18B352E700C32B36 /* MRTwitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRTwitter.m; sourceTree = "<group>"; };
+		79B9A67618B38C5900C32B36 /* MRSocialAbstract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRSocialAbstract.h; sourceTree = "<group>"; };
+		79B9A67718B38C5900C32B36 /* MRSocialAbstract.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRSocialAbstract.m; sourceTree = "<group>"; };
+		79B9A67918B38DC500C32B36 /* MRFacebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRFacebook.h; sourceTree = "<group>"; };
+		79B9A67A18B38DC500C32B36 /* MRFacebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRFacebook.m; sourceTree = "<group>"; };
+		79B9A67C18B3E66000C32B36 /* MRSinaWeibo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRSinaWeibo.h; sourceTree = "<group>"; };
+		79B9A67D18B3E66000C32B36 /* MRSinaWeibo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRSinaWeibo.m; sourceTree = "<group>"; };
+		79B9A68618B5F8E000C32B36 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		79B9A68718B5F8E000C32B36 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		79B9A68818B5F8E000C32B36 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		79B9A68918B5F8E000C32B36 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		79B9A68A18B5F8E000C32B36 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		79B9A68B18B5F8E000C32B36 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
+		79B9A68D18B5F8E000C32B36 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
+		79B9A68F18B5FD0C00C32B36 /* MRStorageUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRStorageUserDefaults.h; sourceTree = "<group>"; };
+		79B9A69018B5FD0C00C32B36 /* MRStorageUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRStorageUserDefaults.m; sourceTree = "<group>"; };
+		79B9A69218B5FFF400C32B36 /* MRACAccountIdentifierStorageProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRACAccountIdentifierStorageProtocol.h; sourceTree = "<group>"; };
+		79C06C9E18B35115001F0FD1 /* MRSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MRSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79C06CA118B35115001F0FD1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		79C06CA318B35115001F0FD1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		79C06CA518B35115001F0FD1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		79C06CA918B35115001F0FD1 /* MRSocialAuth-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MRSocialAuth-Info.plist"; sourceTree = "<group>"; };
+		79C06CA918B35115001F0FD1 /* MRSocial-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MRSocial-Info.plist"; sourceTree = "<group>"; };
 		79C06CAB18B35115001F0FD1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		79C06CAD18B35115001F0FD1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		79C06CAF18B35115001F0FD1 /* MRSocialAuth-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MRSocialAuth-Prefix.pch"; sourceTree = "<group>"; };
+		79C06CAF18B35115001F0FD1 /* MRSocial-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MRSocial-Prefix.pch"; sourceTree = "<group>"; };
 		79C06CB018B35115001F0FD1 /* MRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRAppDelegate.h; sourceTree = "<group>"; };
 		79C06CB118B35115001F0FD1 /* MRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRAppDelegate.m; sourceTree = "<group>"; };
 		79C06CB418B35115001F0FD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79C06CB618B35115001F0FD1 /* MRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRViewController.h; sourceTree = "<group>"; };
 		79C06CB718B35115001F0FD1 /* MRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRViewController.m; sourceTree = "<group>"; };
 		79C06CB918B35115001F0FD1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		79C06CBF18B35115001F0FD1 /* MRSocialAuthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MRSocialAuthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79C06CBF18B35115001F0FD1 /* MRSocialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MRSocialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79C06CC018B35115001F0FD1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		79C06CC818B35115001F0FD1 /* MRSocialAuthTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MRSocialAuthTests-Info.plist"; sourceTree = "<group>"; };
+		79C06CC818B35115001F0FD1 /* MRSocialTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MRSocialTests-Info.plist"; sourceTree = "<group>"; };
 		79C06CCA18B35115001F0FD1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		79C06CCC18B35115001F0FD1 /* MRSocialAuthTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRSocialAuthTests.m; sourceTree = "<group>"; };
+		79C06CCC18B35115001F0FD1 /* MRSocialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRSocialTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +97,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79C06CC118B35115001F0FD1 /* XCTest.framework in Frameworks */,
+				79B9A68E18B5F8E000C32B36 /* libOCMock.a in Frameworks */,
 				79C06CC318B35115001F0FD1 /* UIKit.framework in Frameworks */,
 				79C06CC218B35115001F0FD1 /* Foundation.framework in Frameworks */,
 			);
@@ -79,11 +106,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79B9A66918B3516900C32B36 /* MRSocial */ = {
+			isa = PBXGroup;
+			children = (
+				79B9A67618B38C5900C32B36 /* MRSocialAbstract.h */,
+				79B9A67718B38C5900C32B36 /* MRSocialAbstract.m */,
+				79B9A69218B5FFF400C32B36 /* MRACAccountIdentifierStorageProtocol.h */,
+				79B9A68F18B5FD0C00C32B36 /* MRStorageUserDefaults.h */,
+				79B9A69018B5FD0C00C32B36 /* MRStorageUserDefaults.m */,
+				79B9A66E18B352E700C32B36 /* MRTwitter.h */,
+				79B9A66F18B352E700C32B36 /* MRTwitter.m */,
+				79B9A67918B38DC500C32B36 /* MRFacebook.h */,
+				79B9A67A18B38DC500C32B36 /* MRFacebook.m */,
+				79B9A67C18B3E66000C32B36 /* MRSinaWeibo.h */,
+				79B9A67D18B3E66000C32B36 /* MRSinaWeibo.m */,
+			);
+			path = MRSocial;
+			sourceTree = "<group>";
+		};
+		79B9A68218B5F80800C32B36 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				79B9A68318B5F8E000C32B36 /* OCMock-2.2.3 */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		79B9A68318B5F8E000C32B36 /* OCMock-2.2.3 */ = {
+			isa = PBXGroup;
+			children = (
+				79B9A68418B5F8E000C32B36 /* include */,
+				79B9A68C18B5F8E000C32B36 /* lib */,
+			);
+			path = "OCMock-2.2.3";
+			sourceTree = "<group>";
+		};
+		79B9A68418B5F8E000C32B36 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				79B9A68518B5F8E000C32B36 /* OCMock */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		79B9A68518B5F8E000C32B36 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				79B9A68618B5F8E000C32B36 /* NSNotificationCenter+OCMAdditions.h */,
+				79B9A68718B5F8E000C32B36 /* OCMArg.h */,
+				79B9A68818B5F8E000C32B36 /* OCMConstraint.h */,
+				79B9A68918B5F8E000C32B36 /* OCMock.h */,
+				79B9A68A18B5F8E000C32B36 /* OCMockObject.h */,
+				79B9A68B18B5F8E000C32B36 /* OCMockRecorder.h */,
+			);
+			path = OCMock;
+			sourceTree = "<group>";
+		};
+		79B9A68C18B5F8E000C32B36 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				79B9A68D18B5F8E000C32B36 /* libOCMock.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 		79C06C9518B35115001F0FD1 = {
 			isa = PBXGroup;
 			children = (
-				79C06CA718B35115001F0FD1 /* MRSocialAuth */,
-				79C06CC618B35115001F0FD1 /* MRSocialAuthTests */,
+				79C06CA718B35115001F0FD1 /* MRSocial */,
+				79C06CC618B35115001F0FD1 /* MRSocialTests */,
 				79C06CA018B35115001F0FD1 /* Frameworks */,
 				79C06C9F18B35115001F0FD1 /* Products */,
 			);
@@ -92,8 +183,8 @@
 		79C06C9F18B35115001F0FD1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				79C06C9E18B35115001F0FD1 /* MRSocialAuth.app */,
-				79C06CBF18B35115001F0FD1 /* MRSocialAuthTests.xctest */,
+				79C06C9E18B35115001F0FD1 /* MRSocial.app */,
+				79C06CBF18B35115001F0FD1 /* MRSocialTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,7 +200,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		79C06CA718B35115001F0FD1 /* MRSocialAuth */ = {
+		79C06CA718B35115001F0FD1 /* MRSocial */ = {
 			isa = PBXGroup;
 			children = (
 				79C06CB018B35115001F0FD1 /* MRAppDelegate.h */,
@@ -117,36 +208,39 @@
 				79C06CB318B35115001F0FD1 /* Main.storyboard */,
 				79C06CB618B35115001F0FD1 /* MRViewController.h */,
 				79C06CB718B35115001F0FD1 /* MRViewController.m */,
+				79B9A66918B3516900C32B36 /* MRSocial */,
+				79B9A68218B5F80800C32B36 /* Vendor */,
 				79C06CB918B35115001F0FD1 /* Images.xcassets */,
 				79C06CA818B35115001F0FD1 /* Supporting Files */,
 			);
-			path = MRSocialAuth;
+			path = MRSocial;
 			sourceTree = "<group>";
 		};
 		79C06CA818B35115001F0FD1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				79C06CA918B35115001F0FD1 /* MRSocialAuth-Info.plist */,
+				79C06CA918B35115001F0FD1 /* MRSocial-Info.plist */,
 				79C06CAA18B35115001F0FD1 /* InfoPlist.strings */,
 				79C06CAD18B35115001F0FD1 /* main.m */,
-				79C06CAF18B35115001F0FD1 /* MRSocialAuth-Prefix.pch */,
+				79C06CAF18B35115001F0FD1 /* MRSocial-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		79C06CC618B35115001F0FD1 /* MRSocialAuthTests */ = {
+		79C06CC618B35115001F0FD1 /* MRSocialTests */ = {
 			isa = PBXGroup;
 			children = (
-				79C06CCC18B35115001F0FD1 /* MRSocialAuthTests.m */,
+				79C06CCC18B35115001F0FD1 /* MRSocialTests.m */,
+				795761E018B60B9D001F93C0 /* MRStorageUserDefaultsTests.m */,
 				79C06CC718B35115001F0FD1 /* Supporting Files */,
 			);
-			path = MRSocialAuthTests;
+			path = MRSocialTests;
 			sourceTree = "<group>";
 		};
 		79C06CC718B35115001F0FD1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				79C06CC818B35115001F0FD1 /* MRSocialAuthTests-Info.plist */,
+				79C06CC818B35115001F0FD1 /* MRSocialTests-Info.plist */,
 				79C06CC918B35115001F0FD1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -155,9 +249,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		79C06C9D18B35115001F0FD1 /* MRSocialAuth */ = {
+		79C06C9D18B35115001F0FD1 /* MRSocial */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 79C06CD018B35115001F0FD1 /* Build configuration list for PBXNativeTarget "MRSocialAuth" */;
+			buildConfigurationList = 79C06CD018B35115001F0FD1 /* Build configuration list for PBXNativeTarget "MRSocial" */;
 			buildPhases = (
 				79C06C9A18B35115001F0FD1 /* Sources */,
 				79C06C9B18B35115001F0FD1 /* Frameworks */,
@@ -167,14 +261,14 @@
 			);
 			dependencies = (
 			);
-			name = MRSocialAuth;
+			name = MRSocial;
 			productName = MRSocialAuth;
-			productReference = 79C06C9E18B35115001F0FD1 /* MRSocialAuth.app */;
+			productReference = 79C06C9E18B35115001F0FD1 /* MRSocial.app */;
 			productType = "com.apple.product-type.application";
 		};
-		79C06CBE18B35115001F0FD1 /* MRSocialAuthTests */ = {
+		79C06CBE18B35115001F0FD1 /* MRSocialTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 79C06CD318B35115001F0FD1 /* Build configuration list for PBXNativeTarget "MRSocialAuthTests" */;
+			buildConfigurationList = 79C06CD318B35115001F0FD1 /* Build configuration list for PBXNativeTarget "MRSocialTests" */;
 			buildPhases = (
 				79C06CBB18B35115001F0FD1 /* Sources */,
 				79C06CBC18B35115001F0FD1 /* Frameworks */,
@@ -185,9 +279,9 @@
 			dependencies = (
 				79C06CC518B35115001F0FD1 /* PBXTargetDependency */,
 			);
-			name = MRSocialAuthTests;
+			name = MRSocialTests;
 			productName = MRSocialAuthTests;
-			productReference = 79C06CBF18B35115001F0FD1 /* MRSocialAuthTests.xctest */;
+			productReference = 79C06CBF18B35115001F0FD1 /* MRSocialTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -205,7 +299,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 79C06C9918B35115001F0FD1 /* Build configuration list for PBXProject "MRSocialAuth" */;
+			buildConfigurationList = 79C06C9918B35115001F0FD1 /* Build configuration list for PBXProject "MRSocial" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -218,8 +312,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				79C06C9D18B35115001F0FD1 /* MRSocialAuth */,
-				79C06CBE18B35115001F0FD1 /* MRSocialAuthTests */,
+				79C06C9D18B35115001F0FD1 /* MRSocial */,
+				79C06CBE18B35115001F0FD1 /* MRSocialTests */,
 			);
 		};
 /* End PBXProject section */
@@ -251,7 +345,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				79C06CAE18B35115001F0FD1 /* main.m in Sources */,
+				79B9A67018B352E700C32B36 /* MRTwitter.m in Sources */,
 				79C06CB818B35115001F0FD1 /* MRViewController.m in Sources */,
+				79B9A67E18B3E66000C32B36 /* MRSinaWeibo.m in Sources */,
+				79B9A69118B5FD0C00C32B36 /* MRStorageUserDefaults.m in Sources */,
+				79B9A67818B38C5900C32B36 /* MRSocialAbstract.m in Sources */,
+				79B9A67B18B38DC500C32B36 /* MRFacebook.m in Sources */,
 				79C06CB218B35115001F0FD1 /* MRAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,7 +359,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79C06CCD18B35115001F0FD1 /* MRSocialAuthTests.m in Sources */,
+				79C06CCD18B35115001F0FD1 /* MRSocialTests.m in Sources */,
+				795761E118B60B9E001F93C0 /* MRStorageUserDefaultsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +369,7 @@
 /* Begin PBXTargetDependency section */
 		79C06CC518B35115001F0FD1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 79C06C9D18B35115001F0FD1 /* MRSocialAuth */;
+			target = 79C06C9D18B35115001F0FD1 /* MRSocial */;
 			targetProxy = 79C06CC418B35115001F0FD1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -380,9 +480,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MRSocialAuth/MRSocialAuth-Prefix.pch";
-				INFOPLIST_FILE = "MRSocialAuth/MRSocialAuth-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MRSocial/MRSocial-Prefix.pch";
+				INFOPLIST_FILE = "MRSocial/MRSocial-Info.plist";
+				PRODUCT_NAME = MRSocial;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -393,9 +493,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MRSocialAuth/MRSocialAuth-Prefix.pch";
-				INFOPLIST_FILE = "MRSocialAuth/MRSocialAuth-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MRSocial/MRSocial-Prefix.pch";
+				INFOPLIST_FILE = "MRSocial/MRSocial-Info.plist";
+				PRODUCT_NAME = MRSocial;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -404,20 +504,37 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MRSocialAuth.app/MRSocialAuth";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MRSocial.app/MRSocial";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MRSocialAuth/MRSocialAuth-Prefix.pch";
+				GCC_PREFIX_HEADER = "MRSocial/MRSocial-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "MRSocialAuthTests/MRSocialAuthTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/MRSocial/Vendor/OCMock-2.2.3/include",
+				);
+				INFOPLIST_FILE = "MRSocialTests/MRSocialTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/martinezdelariva/Documents/Xcode\\ Projects/3.\\ Projects/MRSocial/MRSocial/Vendor/OCMock-2.2.3/lib",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-force_load",
+					"$(SRCROOT)/MRSocial/Vendor/OCMock-2.2.3/lib/libOCMock.a",
+					"-ObjC",
+				);
+				PRODUCT_NAME = MRSocialTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -427,16 +544,33 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MRSocialAuth.app/MRSocialAuth";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MRSocial.app/MRSocial";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MRSocialAuth/MRSocialAuth-Prefix.pch";
-				INFOPLIST_FILE = "MRSocialAuthTests/MRSocialAuthTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MRSocial/MRSocial-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/MRSocial/Vendor/OCMock-2.2.3/include",
+				);
+				INFOPLIST_FILE = "MRSocialTests/MRSocialTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/martinezdelariva/Documents/Xcode\\ Projects/3.\\ Projects/MRSocial/MRSocial/Vendor/OCMock-2.2.3/lib",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-force_load",
+					"$(SRCROOT)/MRSocial/Vendor/OCMock-2.2.3/lib/libOCMock.a",
+					"-ObjC",
+				);
+				PRODUCT_NAME = MRSocialTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -445,7 +579,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		79C06C9918B35115001F0FD1 /* Build configuration list for PBXProject "MRSocialAuth" */ = {
+		79C06C9918B35115001F0FD1 /* Build configuration list for PBXProject "MRSocial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				79C06CCE18B35115001F0FD1 /* Debug */,
@@ -454,21 +588,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		79C06CD018B35115001F0FD1 /* Build configuration list for PBXNativeTarget "MRSocialAuth" */ = {
+		79C06CD018B35115001F0FD1 /* Build configuration list for PBXNativeTarget "MRSocial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				79C06CD118B35115001F0FD1 /* Debug */,
 				79C06CD218B35115001F0FD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		79C06CD318B35115001F0FD1 /* Build configuration list for PBXNativeTarget "MRSocialAuthTests" */ = {
+		79C06CD318B35115001F0FD1 /* Build configuration list for PBXNativeTarget "MRSocialTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				79C06CD418B35115001F0FD1 /* Debug */,
 				79C06CD518B35115001F0FD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
