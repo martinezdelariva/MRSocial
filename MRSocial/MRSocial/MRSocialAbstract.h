@@ -10,7 +10,7 @@
 #import <Accounts/Accounts.h>
 #import <Social/Social.h>
 
-#import "MRACAccountIdentifierStorageProtocol.h"
+#import "MRSocialStorageProtocol.h"
 
 @interface MRSocialAbstract : NSObject
 

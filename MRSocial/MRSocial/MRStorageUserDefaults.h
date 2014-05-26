@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 // Protocol
-#import "MRACAccountIdentifierStorageProtocol.h"
+#import "MRSocialStorageProtocol.h"
 
 @interface MRStorageUserDefaults : NSObject<MRSocialStorageProtocol>
 
