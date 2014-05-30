@@ -12,6 +12,10 @@
 
 #import "MRSocialStorageProtocol.h"
 
+extern NSString *const MRSocialErrorDomain;
+extern NSString *const MRSocialErrorGranted;
+extern NSString *const MRSocialErrorBadResponse;
+
 @interface MRSocialAbstract : NSObject
 
 @property (strong, nonatomic) ACAccount *account;
