@@ -78,17 +78,19 @@ NSString *const MRSocialErrorBadResponse = @"2";
         requestAccessToAccountsWithType:[self accountType]
                                 options:[self options]
                              completion:^(BOOL granted, NSError *error) {
-                                 if (error) {
-                                     completion(nil, error);
-                                     return;
-                                 }
-                                 
-                                 NSArray *accounts = [self.accountStore accountsWithAccountType:[weakSelf accountType]];
-                                 if (granted && accounts) {
-                                     self.account = completion(accounts, nil);
-                                 } else {
-                                     completion(nil, [weakSelf errorGranted]);
-                                 }
+                                 [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                                     if (error) {
+                                         completion(nil, error);
+                                         return;
+                                     }
+                                     
+                                     NSArray *accounts = [self.accountStore accountsWithAccountType:[weakSelf accountType]];
+                                     if (granted && accounts) {
+                                         self.account = completion(accounts, nil);
+                                     } else {
+                                         completion(nil, [weakSelf errorGranted]);
+                                     }
+                                 }];
                              }];
 }
 
