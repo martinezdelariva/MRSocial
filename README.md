@@ -158,4 +158,4 @@ As an example, class `MRStorageUserDefaults` that implement protocol `MRACAccoun
 
 ## License
 
-// TODO
+MIT
